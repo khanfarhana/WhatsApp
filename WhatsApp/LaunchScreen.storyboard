@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3X5-Fz-b8c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="E59-r1-wAF">
+            <objects>
+                <viewController id="3X5-Fz-b8c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJs-zT-Bpu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWK-4S-DQO">
+                                <rect key="frame" x="187.5" y="763" width="39.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACEBOOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-OL-vmA">
+                                <rect key="frame" x="155.5" y="802" width="103" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.46758927680000001" green="1" blue="0.42540579010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playstore" translatesAutoresizingMaskIntoConstraints="NO" id="en0-HP-JS2">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="en0-HP-JS2" secondAttribute="height" multiplier="1:1" id="swQ-gk-Xs7"/>
+                                    <constraint firstAttribute="width" constant="120" id="xgG-PF-BmP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TF4-Y4-Ds7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="en0-HP-JS2" firstAttribute="centerX" secondItem="cJs-zT-Bpu" secondAttribute="centerX" id="6SL-Nz-eYx"/>
+                            <constraint firstItem="en0-HP-JS2" firstAttribute="centerY" secondItem="cJs-zT-Bpu" secondAttribute="centerY" id="7Fo-ls-5kp"/>
+                            <constraint firstItem="HWK-4S-DQO" firstAttribute="centerX" secondItem="cJs-zT-Bpu" secondAttribute="centerX" id="DYW-Ui-8Tp"/>
+                            <constraint firstItem="TF4-Y4-Ds7" firstAttribute="bottom" secondItem="Y8h-OL-vmA" secondAttribute="bottom" constant="37" id="LbP-yK-TuQ"/>
+                            <constraint firstItem="Y8h-OL-vmA" firstAttribute="top" secondItem="HWK-4S-DQO" secondAttribute="bottom" constant="18.5" id="hHc-EZ-kKr"/>
+                            <constraint firstItem="Y8h-OL-vmA" firstAttribute="centerX" secondItem="cJs-zT-Bpu" secondAttribute="centerX" id="zin-3T-2wF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ji-qU-t7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playstore" width="512" height="512"/>
+    </resources>
+</document>
